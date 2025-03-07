@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D85A77FD-17A5-412E-B383-800465056433}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VibesFitnessStudio</RootNamespace>
+    <AssemblyName>VibesFitnessStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerDetails.Designer.cs">
+      <DependentUpon>customerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerFeedback.Designer.cs">
+      <DependentUpon>customerFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerFeesPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerFeesPayment.Designer.cs">
+      <DependentUpon>customerFeesPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardPage.Designer.cs">
+      <DependentUpon>dashboardPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeePage.Designer.cs">
+      <DependentUpon>employeePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employeeSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employeeSalary.Designer.cs">
+      <DependentUpon>employeeSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeePaymentSlip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeePaymentSlip.Designer.cs">
+      <DependentUpon>FeePaymentSlip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPassword.Designer.cs">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gymEquipmentStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gymEquipmentStock.Designer.cs">
+      <DependentUpon>gymEquipmentStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loadingUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loadingUi.Designer.cs">
+      <DependentUpon>loadingUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginpage.Designer.cs">
+      <DependentUpon>loginpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentReceipt.Designer.cs">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printInvoice.Designer.cs">
+      <DependentUpon>printInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salaryPayslip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salaryPayslip.Designer.cs">
+      <DependentUpon>salaryPayslip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewCustomerfeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewCustomerfeedback.Designer.cs">
+      <DependentUpon>viewCustomerfeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmpSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewEmpSalary.Designer.cs">
+      <DependentUpon>viewEmpSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFeePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFeePayment.Designer.cs">
+      <DependentUpon>viewFeePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewUser.Designer.cs">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerDetails.resx">
+      <DependentUpon>customerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerFeedback.resx">
+      <DependentUpon>customerFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerFeesPayment.resx">
+      <DependentUpon>customerFeesPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardPage.resx">
+      <DependentUpon>dashboardPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeePage.resx">
+      <DependentUpon>employeePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employeeSalary.resx">
+      <DependentUpon>employeeSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeePaymentSlip.resx">
+      <DependentUpon>FeePaymentSlip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPassword.resx">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gymEquipmentStock.resx">
+      <DependentUpon>gymEquipmentStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loadingUi.resx">
+      <DependentUpon>loadingUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginpage.resx">
+      <DependentUpon>loginpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentReceipt.resx">
+      <DependentUpon>PaymentReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printInvoice.resx">
+      <DependentUpon>printInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salaryPayslip.resx">
+      <DependentUpon>salaryPayslip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewCustomerfeedback.resx">
+      <DependentUpon>viewCustomerfeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmpSalary.resx">
+      <DependentUpon>viewEmpSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFeePayment.resx">
+      <DependentUpon>viewFeePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewUser.resx">
+      <DependentUpon>viewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
